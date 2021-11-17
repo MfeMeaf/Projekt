@@ -25,20 +25,20 @@
 }
 
 #högerbild{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 20%;
     background-color: lightblue;
 }
 
 #mittbild{
-    height: 40%;
-    width: 60%;
+    height: 50%;
+    width: 30%;
     background-color: aqua;
 }
 
 #vänsterbild{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 20%;
     background-color:blue;
 }
 
