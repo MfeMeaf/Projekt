@@ -24,6 +24,24 @@
 
 }
 
+#högerbild{
+    height: 30%;
+    width: 50%;
+    background-color: lightblue;
+}
+
+#mittbild{
+    height: 40%;
+    width: 60%;
+    background-color: aqua;
+}
+
+#vänsterbild{
+    height: 30%;
+    width: 50%;
+    background-color:blue;
+}
+
 /*Gallery (skriv efter 2 rader)*/
 
 
