@@ -8,7 +8,7 @@
 
 .banner{
     background-color: black;
-    height: 300px;
+    height: 35vh;
     width: 100vw;
     border: 5px inset blue;
     background-image: url("bilder/MfeChu.png");
@@ -69,6 +69,6 @@
 
 nav{
     padding-top: 1%;
-    height:25vh;
+    height:35vh;
     width:auto;
 }
