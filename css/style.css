@@ -27,21 +27,30 @@
 }
 
 #högerbild{
-    height: 40%;
+    height: 50%;
     width: 20%;
     background-color: lightblue;
+    float:left;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 #mittbild{
-    height: 50%;
+    height: 60%;
     width: 30%;
     background-color: aqua;
+    float: left;
+    margin-left: 5%;
+    margin-top: 4%;
 }
 
-#vänsterbild{
-    height: 40%;
+#väsnterbild{
+    height: 50%;
     width: 20%;
     background-color:blue;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 /*Gallery (skriv efter 2 rader)*/
