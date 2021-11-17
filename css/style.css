@@ -2,6 +2,10 @@
     margin: 0%;
     padding: 0%;
 }
+
+/*//Banner (skriv efter 2 rader)*/
+
+
 .banner{
     background-color: black;
     height: 300px;
@@ -10,6 +14,10 @@
     background-image: url("bilder/MfeChu.png");
 
 }
+
+/*Teaser (skriv efter 2 rader)*/
+
+
 .teaser{
     height: 400px;
     border: 5px inset red;
@@ -17,6 +25,28 @@
     width: 100vw;
 
 }
+
+#högerbild{
+    height: 40%;
+    width: 20%;
+    background-color: lightblue;
+}
+
+#mittbild{
+    height: 50%;
+    width: 30%;
+    background-color: aqua;
+}
+
+#vänsterbild{
+    height: 40%;
+    width: 20%;
+    background-color:blue;
+}
+
+/*Gallery (skriv efter 2 rader)*/
+
+
 .gallery{
     height: 100vh;
     width: 100vw;
@@ -24,6 +54,10 @@
     background-color: rgb(212, 175, 126);
 
 }
+
+/*Navbar (skriv efter 2 rader)*/
+
+
 nav{
     padding-top: 1%;
     height:25vh;
