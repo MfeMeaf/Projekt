@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.banner{
+    background-color: black;
+    height: 300px;
+    border: 5px inset blue;
+    background-image: url("bilder/MfeChu.png");
+
+}
+.teaser{
+    height: 400px;
+    border: 5px inset red;
+    background-color: rgb(212, 175, 126);
+
+}
+.gallery{
+    height: 100vh;
+    border: 5px inset green;
+    background-color: rgb(212, 175, 126);
+
+}
+nav{
+    padding-top: 10px;
+}
