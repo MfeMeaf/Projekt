@@ -1,5 +1,4 @@
 //Banner (Skriv efter 2 rader)
-<<<<<<< HEAD
 
 
 
@@ -9,9 +8,6 @@
 //});
 
 var test = document.getElementsByClassName("banner");
-=======
-var test = $(".banner");
->>>>>>> 3b4ec1727f6259bae540ce44844080f0d7d3067c
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
@@ -19,14 +15,12 @@ test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 //Teaser (skriv efter 2 rader)
 
 document.addEventListener("keydown", piltryck);
-const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.png","bilder/memes/4.png","bilder/memes/5.png","bilder/memes/6.png","bilder/memes/7.png","bilder/memes/8.png","bilder/memes/9.png","bilder/memes/10.png","bilder/memes/11.png","bilder/memes/12.png","bilder/memes/13.png","bilder/memes/14.png","bilder/memes/15.png","bilder/memes/16.png","bilder/memes/17.png","bilder/memes/18.png"];
+const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.png","bilder/memes/4.png","bilder/memes/5.png","bilder/memes/6.png","bilder/memes/7.png","bilder/memes/8.png","bilder/memes/9.png","bilder/memes/10.png","bilder/memes/11.png","bilder/memes/12.png","bilder/memes/13.jpg","bilder/memes/14.jpg","bilder/memes/15.jpg","bilder/memes/16.png","bilder/memes/17.png","bilder/memes/18.png"];
 var i=0;
 
 function piltryck(event){
-    console.log(i);
     if(event.key === "ArrowRight"){
-        if(i==15){
-            console.log("return");
+        if(i==16){
             return;
         }
         
@@ -39,7 +33,7 @@ function piltryck(event){
     }
 
     if(event.key === "ArrowLeft"){
-        if(i==0){
+        if(i==-1){
             return;
         }
         
@@ -50,6 +44,41 @@ function piltryck(event){
             document.getElementById("vbild").src = teaserbilder[i];
         }
     }
+}
+
+var hbtn = document.getElementById("högerknapp");
+var vbtn = document.getElementById("vänsterknapp");
+hbtn.addEventListener("click",högertryck);
+vbtn.addEventListener("click",vänstertryck);
+
+function högertryck(){
+
+        if(i==16){
+            
+            return;
+        }
+        
+        else{
+            i++;
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+        }
+}
+
+function vänstertryck(){
+
+        if(i==-1){
+            
+            return;
+        }
+        
+        else{
+            i--;
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+        }
 }
 
 
