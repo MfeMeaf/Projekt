@@ -1,14 +1,12 @@
 //Banner (Skriv efter 2 rader)
 
 
-var rickroll = $("#rick")[0];
-rickroll.prop("muted", true);
 
-$(document).ready("load", function(){
-    rickroll.autoplay = true;
-});
 
->>>>>>> 33af1b50f6c61e7c5c4f1d80056e061b99296b22
+//$(document).ready("load", function(){
+//    rickroll.autoplay = true;
+//});
+
 var test = document.getElementsByClassName("banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
@@ -16,9 +14,40 @@ test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
 //Teaser (skriv efter 2 rader)
 
+document.addEventListener("keydown", piltryck);
+const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.png","bilder/memes/4.png","bilder/memes/5.png","bilder/memes/6.png","bilder/memes/7.png","bilder/memes/8.png","bilder/memes/9.png","bilder/memes/10.png","bilder/memes/11.png","bilder/memes/12.png","bilder/memes/13.png","bilder/memes/14.png","bilder/memes/15.png","bilder/memes/16.png","bilder/memes/17.png","bilder/memes/18.png"];
+var i=0;
 
-var teaserbilder = new Array();
-var vbild = document.getElementById("vänsterbild");
+function piltryck(event){
+    console.log(i);
+    if(event.key === "ArrowRight"){
+        if(i==15){
+            console.log("return");
+            return;
+        }
+        
+        else{
+            i++;
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+        }
+    }
+
+    if(event.key === "ArrowLeft"){
+        if(i==0){
+            return;
+        }
+        
+        else{
+            i--;
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+        }
+    }
+}
+
 
 teaserbilder[0]= new Image();
 teaserbilder[0].src = "url('bilder/memes/abgs.png')"
