@@ -4,7 +4,7 @@
 }
 
 img{
-    max-width: 100%;
+    max-width:100%;
 }
 
 /*Banner (skriv efter 2 rader)*/
@@ -36,11 +36,11 @@ img{
     float:left;
     margin-left: 5%;
     margin-top: 5%;
-    filter: blur(5px);
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+    filter: blur(1px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
 }
 
 #mittbild{
@@ -100,6 +100,12 @@ img{
 
 /*Gallery (skriv efter 2 rader)*/
 
+
+#dankmemes-index{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
 
 .gallery{
     height: 100vh;
