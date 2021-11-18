@@ -1,14 +1,4 @@
 //Banner (Skriv efter 2 rader)
-
-
-var rickroll = $("#rick")[0];
-rickroll.prop("muted", true);
-
-$(document).ready("load", function(){
-    rickroll.autoplay = true;
-    rickroll.prop("muted", false);
-});
-
 var test = $(".banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";

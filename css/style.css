@@ -99,6 +99,15 @@ nav{
     width:auto;
 }
 
+/*Rickroll div*/
+
+#rickroll{
+    width:100vw;
+    height:65vh;
+    background-color: burlywood;
+}
+
+
 /*Om Oss sida (Skriv efter 2 rader)*/
 
 
