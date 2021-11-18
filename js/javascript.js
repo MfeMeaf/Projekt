@@ -1,18 +1,15 @@
 //Banner (Skriv efter 2 rader)
 
 
-
-
-//$(document).ready("load", function(){
-//    rickroll.autoplay = true;
-//});
-
 var test = document.getElementsByClassName("banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
 
 //Teaser (skriv efter 2 rader)
+$("dankmemes-index").on("click",function(){
+    document.location.replace("/category-sidor/dank.html");
+});
 
 document.addEventListener("keydown", piltryck);
 const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.png","bilder/memes/4.png","bilder/memes/5.png","bilder/memes/6.png","bilder/memes/7.png","bilder/memes/8.png","bilder/memes/9.png","bilder/memes/10.png","bilder/memes/11.png","bilder/memes/12.png","bilder/memes/13.jpg","bilder/memes/14.jpg","bilder/memes/15.jpg","bilder/memes/16.png","bilder/memes/17.png","bilder/memes/18.png"];
@@ -25,7 +22,7 @@ function piltryck(event){
         }
         
         else{
-            i++;
+            i = i+1;
             document.getElementById("hbild").src = teaserbilder[2 + i];
             document.getElementById("mbild").src = teaserbilder[1 + i];
             document.getElementById("vbild").src = teaserbilder[i];
@@ -33,12 +30,16 @@ function piltryck(event){
     }
 
     if(event.key === "ArrowLeft"){
+<<<<<<< HEAD
         if(i==-1){
+=======
+        if(i<=0){
+>>>>>>> c5f777ec1ac45819c8c480f7499ebfa419a44733
             return;
         }
         
         else{
-            i--;
+            i = i-1;
             document.getElementById("hbild").src = teaserbilder[2 + i];
             document.getElementById("mbild").src = teaserbilder[1 + i];
             document.getElementById("vbild").src = teaserbilder[i];
