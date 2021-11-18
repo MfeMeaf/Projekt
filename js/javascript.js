@@ -6,9 +6,10 @@ rickroll.prop("muted", true);
 
 $(document).ready("load", function(){
     rickroll.autoplay = true;
+    rickroll.prop("muted", false);
 });
 
-var test = document.getElementsByClassName("banner");
+var test = $(".banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
