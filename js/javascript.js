@@ -1,6 +1,14 @@
-//Banner (skriv efter 2 rader)
+//Banner (Skriv efter 2 rader)
 
-var rickroll = document.getElementById("rick").autoplay;
+
+var rickroll = $("#rick")[0];
+rickroll.prop("muted", true);
+
+$(document).ready("load", function(){
+    rickroll.autoplay = true;
+});
+
+>>>>>>> 33af1b50f6c61e7c5c4f1d80056e061b99296b22
 var test = document.getElementsByClassName("banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
