@@ -107,6 +107,14 @@ nav{
     background-color: burlywood;
 }
 
+/*About us page stuff*/
+
+.aboutUsImage{
+    background-color: coral;
+    height:350px;
+    width:25%;
+}
+
 
 /*Om Oss sida (Skriv efter 2 rader)*/
 
