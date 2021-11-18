@@ -3,7 +3,7 @@
     padding: 0%;
 }
 
-/*//Banner (skriv efter 2 rader)*/
+/*Banner (skriv efter 2 rader)*/
 
 
 .banner{
@@ -48,10 +48,37 @@
     width: 20%;
     background-color:blue;
     float: left;
-    margin-left: 10%;
+    margin-left: 3%;
     margin-top: 5%;
 }
 
+#högerknapp{
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    float: right;
+    margin-right: 3%;
+    margin-top: 9.8%;
+}
+
+#vänsterknapp{
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 9.8%;
+}
 /*Gallery (skriv efter 2 rader)*/
 
 
