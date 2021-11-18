@@ -117,3 +117,27 @@ nav{
     height:35vh;
     width:auto;
 }
+
+/*Rickroll div*/
+
+#rickroll{
+    width:100vw;
+    height:65vh;
+    background-color: burlywood;
+}
+
+/*About us page stuff*/
+
+.aboutUsImage{
+    background-color: coral;
+    height:350px;
+    width:25%;
+}
+
+
+/*Om Oss sida (Skriv efter 2 rader)*/
+
+
+.OmOss{
+    background-color: rgb(212, 175, 126);
+}

@@ -1,4 +1,5 @@
 //Banner (Skriv efter 2 rader)
+<<<<<<< HEAD
 
 
 
@@ -8,6 +9,9 @@
 //});
 
 var test = document.getElementsByClassName("banner");
+=======
+var test = $(".banner");
+>>>>>>> 3b4ec1727f6259bae540ce44844080f0d7d3067c
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
