@@ -8,7 +8,6 @@ $(document).ready("load", function(){
     rickroll.autoplay = true;
 });
 
->>>>>>> 33af1b50f6c61e7c5c4f1d80056e061b99296b22
 var test = document.getElementsByClassName("banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
