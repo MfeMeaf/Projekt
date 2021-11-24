@@ -6,6 +6,7 @@ var test = document.getElementsByClassName("banner");
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
 
+
 //Teaser (skriv efter 2 rader)
 $("dankmemes-index").on("click",function(){
     document.location.replace("/category-sidor/dank.html");
@@ -18,31 +19,30 @@ var i=0;
 function piltryck(event){
     if(event.key === "ArrowRight"){
         if(i==16){
-            return;
+            i = 0;
+            $("#hbild").attr("src", teaserbilder[i+1])
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[17]);
         }
         
         else{
             i = i+1;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
+            $("#hbild").attr("src", teaserbilder[2 + i])
+            $("#mbild").attr("src", teaserbilder[1 + i]);
+            $("#vbild").attr("src", teaserbilder[i]);
         }
     }
 
     if(event.key === "ArrowLeft"){
-<<<<<<< HEAD
         if(i==-1){
-=======
-        if(i<=0){
->>>>>>> c5f777ec1ac45819c8c480f7499ebfa419a44733
             return;
         }
         
         else{
             i = i-1;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
+            $("#hbild").attr("src", teaserbilder[2 + i])
+            $("#mbild").attr("src", teaserbilder[1 + i]);
+            $("#vbild").attr("src", teaserbilder[i]);
         }
     }
 }
@@ -83,8 +83,6 @@ function vänstertryck(){
 }
 
 
-teaserbilder[0]= new Image();
-teaserbilder[0].src = "url('bilder/memes/abgs.png')"
 
 
 //Gallery (skriv efter 2 rader)
