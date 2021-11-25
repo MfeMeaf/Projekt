@@ -35,7 +35,10 @@ function piltryck(event){
 
     if(event.key === "ArrowLeft"){
         if(i==-1){
-            return;
+            i=17;
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[i-1])
+            
         }
         
         else{
@@ -83,10 +86,20 @@ function vänstertryck(){
 }
 
 
-<<<<<<< HEAD
 function bilddelay(){
     setInterval(autoscroll,5000);
 }
+/*
+function autoscroll(){
+    for( i; i=0; i++){
+        document.getElementById("hbild").src = teaserbilder[2 + i];
+        document.getElementById("mbild").src = teaserbilder[1 + i];
+        document.getElementById("vbild").src = teaserbilder[i];
+        if(i<16){i=0}
+    }
+    
+}
+*/
 
 function autoscroll(){
     console.log(`before: ${i}`)
@@ -108,15 +121,311 @@ function autoscroll(){
     }
     i++;
     
-    setInterval(autoscroll,2000); 
+    SetInterval(5000); 
     console.log(`after: ${i}`);
 
 }
 
-=======
->>>>>>> 51c17ee69ffa7c93d7280a5a0c94da1166e80ea0
 
 
 //Gallery (skriv efter 2 rader)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OWO
