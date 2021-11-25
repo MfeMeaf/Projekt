@@ -6,6 +6,7 @@ var test = document.getElementsByClassName("banner");
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
 
+
 //Teaser (skriv efter 2 rader)
 $("dankmemes-index").on("click",function(){
     document.location.replace("/category-sidor/dank.html");
@@ -18,14 +19,17 @@ var i=0;
 function piltryck(event){
     if(event.key === "ArrowRight"){
         if(i==16){
-            return;
+            i = 0;
+            $("#hbild").attr("src", teaserbilder[i+1])
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[17]);
         }
         
         else{
             i = i+1;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
+            $("#hbild").attr("src", teaserbilder[2 + i])
+            $("#mbild").attr("src", teaserbilder[1 + i]);
+            $("#vbild").attr("src", teaserbilder[i]);
         }
     }
 
@@ -36,9 +40,9 @@ function piltryck(event){
         
         else{
             i = i-1;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
+            $("#hbild").attr("src", teaserbilder[2 + i])
+            $("#mbild").attr("src", teaserbilder[1 + i]);
+            $("#vbild").attr("src", teaserbilder[i]);
         }
     }
 }
@@ -79,6 +83,7 @@ function vänstertryck(){
 }
 
 
+<<<<<<< HEAD
 function bilddelay(){
     setInterval(autoscroll,5000);
 }
@@ -108,6 +113,8 @@ function autoscroll(){
 
 }
 
+=======
+>>>>>>> 51c17ee69ffa7c93d7280a5a0c94da1166e80ea0
 
 
 //Gallery (skriv efter 2 rader)
