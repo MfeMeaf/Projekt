@@ -30,11 +30,7 @@ function piltryck(event){
     }
 
     if(event.key === "ArrowLeft"){
-<<<<<<< HEAD
         if(i==-1){
-=======
-        if(i<=0){
->>>>>>> c5f777ec1ac45819c8c480f7499ebfa419a44733
             return;
         }
         
@@ -83,8 +79,35 @@ function vänstertryck(){
 }
 
 
-teaserbilder[0]= new Image();
-teaserbilder[0].src = "url('bilder/memes/abgs.png')"
+function bilddelay(){
+    setInterval(autoscroll,5000);
+}
+
+function autoscroll(){
+    console.log(`before: ${i}`)
+    if(i < 16){
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+            
+        console.log(i);
+    }
+    if(i > 16){
+        i=0;
+    
+        
+            document.getElementById("hbild").src = teaserbilder[2 + i];
+            document.getElementById("mbild").src = teaserbilder[1 + i];
+            document.getElementById("vbild").src = teaserbilder[i];
+            
+    }
+    i++;
+    
+    setInterval(autoscroll,2000); 
+    console.log(`after: ${i}`);
+
+}
+
 
 
 //Gallery (skriv efter 2 rader)
