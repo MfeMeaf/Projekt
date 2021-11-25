@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <title>memes</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>memes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body onload="autoscroll()">
         <div class="banner d-flex justify-content-end">
               <nav class="navbar navbar-expand bg-transparent align-items-start w-auto">
@@ -20,7 +23,7 @@
                             <a class="nav-link btn btn-sm btn-outline-secondary m-1 text-white" href="#">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="Memes.html">Memes</a>
+                            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="#MemesCategory">Memes</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="AboutUs.html">About us</a>
@@ -47,12 +50,16 @@
               </div>
             <button id="högerknapp">&gt;</button>
         </div>
-        <div class="gallery">
-          <div id="dankmemes-index">
-            <h1>Dank memes</h1>
-          </div>
+        <div class="gallery" id="MemesCategory">
+          <h1>Memes Categories</h1>
+          <img src="bilder/memes/5.png" usemap="#image-map2">
+
+          <map name="image-map2" id="mapDankmemes">
+            <area target="" alt="" title="" href="dankmeme.html" coords="200,174,976,813" shape="rect">
+          </map>
         </div>
         <script src="js/javascript.js">
         </script>
 </body>
+
 </html>
