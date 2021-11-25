@@ -152,3 +152,12 @@ nav{
 .OmOss{
     background-color: rgb(212, 175, 126);
 }
+
+/* Categorier */
+
+#mapDankmemes{
+    margin-left: 100px;
+    margin-top: 75px;
+    width: 200px;
+    height: 200px;
+}
