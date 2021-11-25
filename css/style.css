@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 img{
     max-width:100%;
     
@@ -143,8 +147,8 @@ nav{
 
 .aboutUsImage{
     background-color: coral;
-    height:350px;
-    width:10vw;
+    height:50vh;
+    width:50vw;
 }
 
 
