@@ -11,62 +11,53 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+<body onload="autoscroll()">
+        <div class="banner d-flex justify-content-end">
+              <nav class="navbar navbar-expand bg-transparent align-items-start w-auto">
+                <a class="navbar-brand text-white" href="#">Home</a>
+                  
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link btn btn-sm btn-outline-secondary m-1 text-white" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="Memes.html">Memes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="AboutUs.html">About us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="nsfw.html">NSFW</a>
+                          </li>
+                      </ul>
+                  </div>
+            </nav>
+        </div>
+        <div class="teaser">
+            <button id="vänsterknapp">&lt;</button>
+              <div class="row justify-content-md-center">
+                <div id="vänsterbild" class="col-md-4 px-0">
+                  <img src="bilder/memes/1.png" alt="" id="vbild" class="img-fluid rounded col col-lg">
+                </div>
+                <div id="mittbild" class="col-md-4 px-0">
+                  <img src="bilder/memes/2.png" alt="" id="mbild" class="img-fluid rounded col col-lg">
+                </div>
+                <div id="högerbild" class="col-md-4 px-0">
+                  <img src="bilder/memes/3.png" alt="" id="hbild" class="img-fluid rounded col col-lg">
+                </div>
+              </div>
+            <button id="högerknapp">&gt;</button>
+        </div>
+        <div class="gallery">
+          <img src="bilder/memes/5.png" usemap="#image-map2">
 
-<body>
-  <div class="banner d-flex justify-content-end">
-    <nav class="navbar navbar-expand bg-transparent align-items-start w-auto">
-      <a class="navbar-brand text-white" href="#">Home</a>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link btn btn-sm btn-outline-secondary m-1 text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="Memes.html">Memes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="AboutUs.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-sm btn-outline-secondary m-1" href="nsfw.html">NSFW</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="teaser">
-    <button id="vänsterknapp">&lt;</button>
-    <div class="row justify-content-md-center">
-      <div id="vänsterbild" class="col-md-4 px-0">
-        <img src="bilder/memes/1.png" alt="" id="vbild" class="img-fluid rounded col col-lg">
-      </div>
-      <div id="mittbild" class="col-md-4 px-0">
-        <img src="bilder/memes/2.png" alt="" id="mbild" class="img-fluid rounded col col-lg">
-      </div>
-      <div id="högerbild" class="col-md-4 px-0">
-        <img src="bilder/memes/3.png" alt="" id="hbild" class="img-fluid rounded col col-lg">
-      </div>
-    </div>
-    <button id="högerknapp">&gt;</button>
-  </div>
-  <div class="gallery">
-    <img id="mapDankmemes"
-      src="https://cdn.discordapp.com/attachments/622021991045529622/913388724182736937/dank_meme_icon.png"
-      usemap="#image-map">
-
-    <map name="image-map">
-      <area target="" alt="yeet" title="DankMemes" href="dankmeme.html" coords="5,8,200,200" shape="rect">
-    </map>
-
-    <img src="anton.png" usemap="#image-map2">
-
-    <map name="image-map2">
-      <area target="" alt="" title="" href="" coords="200,174,976,813" shape="rect">
-    </map>
-  </div>
-  <script src="js/javascript.js">
-  </script>
+          <map name="image-map2" id="mapDankmemes">
+            <area target="" alt="" title="" href="" coords="200,174,976,813" shape="rect">
+          </map>
+        </div>
+        <script src="js/javascript.js">
+        </script>
 </body>
 
 </html>

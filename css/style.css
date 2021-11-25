@@ -5,6 +5,7 @@
 
 img{
     max-width:100%;
+    
 }
 
 /*Banner (skriv efter 2 rader)*/
@@ -26,6 +27,7 @@ img{
     border: 5px inset red;
     background-color: rgb(122, 175, 126);
     width: auto;
+    text-align: center;
 
 }
 
