@@ -174,12 +174,9 @@ nav{
 
 /* Categorier */
 
-#mapDankmemes{
-    width: 50%;
-    height: 50%;
-}
-
-#MemeGallery{
-    height:50%;
-    width:50%;
+#mapMemes{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 15vw;
+    height: 15vh;
 }
