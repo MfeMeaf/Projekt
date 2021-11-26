@@ -33,7 +33,9 @@ function piltryck(event) {
 
     if (event.key === "ArrowLeft") {
         if (i == -1) {
-            return;
+            i=17;
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[i-1]);
         } else {
             i = i - 1;
             $("#hbild").attr("src", teaserbilder[2 + i])
@@ -51,8 +53,10 @@ vbtn.addEventListener("click", vänstertryck);
 function högertryck() {
 
     if (i == 16) {
-
-        return;
+        i = 0;
+            $("#hbild").attr("src", teaserbilder[i + 1])
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[17]);
     } else {
         i++;
         document.getElementById("hbild").src = teaserbilder[2 + i];
@@ -64,8 +68,10 @@ function högertryck() {
 function vänstertryck() {
 
     if (i == -1) {
-
-        return;
+            i=17;
+            $("#hbild").attr("src", teaserbilder[0])
+            $("#mbild").attr("src", teaserbilder[i]);
+            $("#vbild").attr("src", teaserbilder[i-1]);
     } else {
         i--;
         document.getElementById("hbild").src = teaserbilder[2 + i];
@@ -74,7 +80,11 @@ function vänstertryck() {
     }
 }
 
+function autoscroll(){
+    for(i;i=Array.length;i++){
 
+    }
+}
 
 
 //Gallery (skriv efter 2 rader)
