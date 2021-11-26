@@ -5,7 +5,13 @@ var test = document.getElementsByClassName("banner");
 
 test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
 
-
+var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())); 
+if(mobile){
+    $("#hbild").hide();
+    $("#vbild").hide();
+    $("#vänsterbild").hide();
+    $("#högerbild").hide();
+}
 
 //Teaser (skriv efter 2 rader)
 $("dankmemes-index").on("click",function(){
