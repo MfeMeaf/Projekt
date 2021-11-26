@@ -16,6 +16,22 @@ document.addEventListener("keydown", piltryck);
 const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.png","bilder/memes/4.png","bilder/memes/5.png","bilder/memes/6.png","bilder/memes/7.png","bilder/memes/8.png","bilder/memes/9.png","bilder/memes/10.png","bilder/memes/11.png","bilder/memes/12.png","bilder/memes/13.jpg","bilder/memes/14.jpg","bilder/memes/15.jpg","bilder/memes/16.png","bilder/memes/17.png","bilder/memes/18.png"];
 var i=0;
 
+$(window).resize(function(){
+    if($(window).width() < 960){
+        $("#hbild").hide();
+        $("#vbild").hide();
+        $("#vänsterbild").hide();
+        $("#högerbild").hide();
+    }
+    else{
+        $("#hbild").show();
+        $("#vbild").show();
+        $("#vänsterbild").show();
+        $("#högerbild").show();
+    }
+})
+
+
 function piltryck(event){
     if(event.key === "ArrowRight"){
         if(i==16){
