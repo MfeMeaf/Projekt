@@ -17,7 +17,7 @@ const teaserbilder = ["bilder/memes/1.png","bilder/memes/2.png","bilder/memes/3.
 var i=0;
 
 $(window).resize(function(){
-    if($(window).width() < 960){
+    if($(window).width() < 1080){
         $("#hbild").hide();
         $("#vbild").hide();
         $("#vänsterbild").hide();
@@ -30,6 +30,8 @@ $(window).resize(function(){
         $("#högerbild").show();
     }
 })
+
+
 
 
 function piltryck(event){
