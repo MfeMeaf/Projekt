@@ -159,9 +159,16 @@ nav{
 /*About us page stuff*/
 
 .aboutUsImage{
-    background-color: coral;
     height:50vh;
     width:50vw;
+    margin-top: 15px;
+    border-radius: 25%;
+    background-color: coral;
+}
+
+.AboutUsThing>p{
+    margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -179,4 +186,16 @@ nav{
     margin-top: 50px;
     width: 15vw;
     height: 15vh;
+}
+
+#Meme-gallery{
+    background-color: aquamarine;
+}
+
+#Meme-gallery>img{
+    margin: 15px;
+}
+
+#OmOss>img{
+    margin-top: 20px;
 }
