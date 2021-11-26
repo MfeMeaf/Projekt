@@ -33,15 +33,6 @@ function piltryck(event){
         }
     }
 
-<<<<<<< HEAD
-    if (event.key === "ArrowLeft") {
-        if (i == -1) {
-            i=17;
-            $("#mbild").attr("src", teaserbilder[i]);
-            $("#vbild").attr("src", teaserbilder[i-1]);
-        } else {
-            i = i - 1;
-=======
     if(event.key === "ArrowLeft"){
         if(i==-1){
             i=17;
@@ -52,7 +43,6 @@ function piltryck(event){
         
         else{
             i = i-1;
->>>>>>> 8cb18401f74d6ecc0cb58130a71bb0af43da644b
             $("#hbild").attr("src", teaserbilder[2 + i])
             $("#mbild").attr("src", teaserbilder[1 + i]);
             $("#vbild").attr("src", teaserbilder[i]);
@@ -65,7 +55,7 @@ var vbtn = document.getElementById("vänsterknapp");
 hbtn.addEventListener("click",högertryck);
 vbtn.addEventListener("click",vänstertryck);
 
-<<<<<<< HEAD
+function högertryck(){
     if (i == 16) {
         i = 0;
             $("#hbild").attr("src", teaserbilder[i + 1])
@@ -77,64 +67,28 @@ vbtn.addEventListener("click",vänstertryck);
         document.getElementById("mbild").src = teaserbilder[1 + i];
         document.getElementById("vbild").src = teaserbilder[i];
     }
-=======
-function högertryck(){
-
-        if(i==16){
-            
-            return;
-        }
-        
-        else{
-            i++;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
-        }
->>>>>>> 8cb18401f74d6ecc0cb58130a71bb0af43da644b
 }
+
 
 function vänstertryck(){
 
-        if(i==-1){
-            
-            return;
-        }
+    if(i==-1){
+        i=17;
+        $("#mbild").attr("src", teaserbilder[i]);
+        $("#vbild").attr("src", teaserbilder[i-1])
         
-        else{
-            i--;
-            document.getElementById("hbild").src = teaserbilder[2 + i];
-            document.getElementById("mbild").src = teaserbilder[1 + i];
-            document.getElementById("vbild").src = teaserbilder[i];
-        }
-}
-
-<<<<<<< HEAD
-    if (i == -1) {
-            i=17;
-            $("#hbild").attr("src", teaserbilder[0])
-            $("#mbild").attr("src", teaserbilder[i]);
-            $("#vbild").attr("src", teaserbilder[i-1]);
-    } else {
-        i--;
-=======
-
-function bilddelay(){
-    setInterval(autoscroll,5000);
-}
-/*
-function autoscroll(){
-    for( i; i=0; i++){
->>>>>>> 8cb18401f74d6ecc0cb58130a71bb0af43da644b
-        document.getElementById("hbild").src = teaserbilder[2 + i];
-        document.getElementById("mbild").src = teaserbilder[1 + i];
-        document.getElementById("vbild").src = teaserbilder[i];
-        if(i<16){i=0}
     }
     
+    else{
+        i = i-1;
+        $("#hbild").attr("src", teaserbilder[2 + i])
+        $("#mbild").attr("src", teaserbilder[1 + i]);
+        $("#vbild").attr("src", teaserbilder[i]);
+    }
 }
-*/
 
+
+/*
 function autoscroll(){
     console.log(`before: ${i}`)
     if(i < 16){
@@ -157,16 +111,13 @@ function autoscroll(){
     
     SetInterval(5000); 
     console.log(`after: ${i}`);
+}
 
-<<<<<<< HEAD
 function autoscroll(){
     for(i;i=Array.length;i++){
-=======
-}
->>>>>>> 8cb18401f74d6ecc0cb58130a71bb0af43da644b
 
     }
 }
-
+*/
 
 //Gallery (skriv efter 2 rader)
