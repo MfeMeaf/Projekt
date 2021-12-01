@@ -11,6 +11,8 @@ if(mobile){
     $("#vbild").hide();
     $("#vänsterbild").hide();
     $("#högerbild").hide();
+    $(".mobil-css").width("50vw");
+    $(".mobil-css").css({marginLeft : "100px", marginTop : "20px"});
 }
 
 //Teaser (skriv efter 2 rader)

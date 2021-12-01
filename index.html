@@ -13,7 +13,7 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body onload="autoscroll()">
+<body">
   <div class="banner d-flex justify-content-end">
     <nav class="navbar navbar-expand bg-transparent align-items-start w-auto">
       <a class="navbar-brand text-white" href="#">Home</a>
@@ -53,10 +53,15 @@
   </div>
   <div class="gallery" id="MemesCategory">
     <h1>Memes Categories</h1>
-    <img src="bilder/memes/5.png" usemap="#image-map2" id="mapMemes">
+    <img src="bilder/memes/5.png" usemap="#image-map" class="mobil-css" class="mapMemes">
+
+    <map name="image-map" id="mapMemes">
+      <area target="" alt="" title="" href="dankmeme.html" coords="1000,0,0,1000" shape="rect">
+    </map>
+    <img src="bilder/david lawl.png" usemap="#image-map2" class="mobil-css" class="mapMemes">
 
     <map name="image-map2" id="mapMemes">
-      <area target="" alt="" title="" href="dankmeme.html" coords="1000,0,0,1000" shape="rect">
+      <area target="" alt="" title="" href="kamratmeme.html" coords="1000,0,0,1000" shape="rect">
     </map>
   </div>
   <script src="js/javascript.js">
