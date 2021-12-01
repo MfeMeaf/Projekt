@@ -11,7 +11,7 @@ if(mobile){
     $("#vbild").hide();
     $("#vänsterbild").hide();
     $("#högerbild").hide();
-    $("#mittbild").width('90vw');
+    $("#mittbild").width('85vw');
 }
 
 //Teaser (skriv efter 2 rader)
