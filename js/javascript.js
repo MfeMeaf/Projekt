@@ -13,7 +13,7 @@ if(mobile){
     $("#högerbild").hide();
     $(".mobil-css").width("50vw");
     $(".mobil-css").css({marginLeft : "100px", marginTop : "20px"});
-    $("#mittbild").width('67vw');
+    $("#mittbild").width('65vw');
 }
 
 //Teaser (skriv efter 2 rader)
