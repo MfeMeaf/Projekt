@@ -3,7 +3,9 @@
 
 var test = document.getElementsByClassName("banner");
 
-test[0].style.backgroundImage = "url('bilder/MfeChu.png')";
+test[0].style.backgroundImage = "url('bilder/banner/bannergif.gif')";
+test[0].style.backgroundRepeat = "no-repeat";
+
 
 var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())); 
 if(mobile){
