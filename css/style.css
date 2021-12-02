@@ -11,10 +11,7 @@ img{
     max-width:100%;
     
 }
-.Meme-Gallery{
-    background-color: burlywood;
-    height:90vh;
-}
+
 body{
     background-color:burlywood;
 }
@@ -40,11 +37,10 @@ body{
 
 .teaser{
     height: 55vh;
-    border: 5px inset red;
     background-color: rgb(122, 175, 126);
     width: auto;
     text-align: center;
-
+    background-image: linear-gradient(to top, #b9e983 0%, #3ad5b3 100%);
 }
 
 #högerbild{
@@ -146,8 +142,9 @@ body{
 .gallery{
     height: 100vh;
     width: auto;
-    border: 5px inset green;
     background-color: rgb(212, 175, 126);
+    background-image: linear-gradient(to top, #3ad5b3 0%, #b9e983 100%);
+
 }
 
 .gallery>img{
