@@ -20,12 +20,15 @@ body{
 
 
 .banner{
+    background-image: url("bilder/Felix.PNG");
+    background-repeat: no-repeat;
     background-color: black;
     height: 35vh;
     width: auto;
     border: 5px inset blue;
 
 }
+
 
 /*Teaser (skriv efter 2 rader)*/
 
@@ -140,8 +143,13 @@ body{
     width: auto;
     border: 5px inset green;
     background-color: rgb(212, 175, 126);
-
 }
+
+.gallery>img{
+    width: 15vw;
+}
+
+
 
 /*Navbar (skriv efter 2 rader)*/
 
@@ -186,7 +194,7 @@ nav{
 /* Categorier */
 
 #mapMemes{
-    margin-left: 100px;
+    margin-left: 2vw;
     margin-top: 50px;
     width: 15vw;
     height: 15vh;
@@ -202,4 +210,8 @@ nav{
 
 #OmOss>img{
     margin-top: 20px;
+}
+
+#MemesCategory{
+    text-align:center;
 }
