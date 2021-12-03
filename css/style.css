@@ -202,13 +202,11 @@ nav{
     height: 15vh;
 }
 
-.Meme-gallery{
-    background-color: aquamarine;
+.Meme-Gallery{
+    padding: 2%;
 }
 
-#Meme-gallery>img{
-    margin: 15px;
-}
+
 
 #OmOss>img{
     margin-top: 20px;
@@ -216,4 +214,11 @@ nav{
 
 #MemesCategory{
     text-align:center;
+}
+
+
+/* Personligt */
+
+#felix{
+    border-radius:1%;
 }
